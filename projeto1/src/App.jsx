@@ -1,6 +1,7 @@
 import './App.css'
 
 import CardBooks from './components/CardBooks'
+import capaLivro from './assets/livros/cavernas_aco.jpg'
 
 function App() {
 
@@ -8,19 +9,10 @@ function App() {
     // fragments
     <>  
       <CardBooks
-        titulo= 'BTK: Máscara da Maldade'
-        autor= 'Dennis Lynn Rader'
-      /> 
-
-      <CardBooks
-        titulo= 'A paciente silenciosa'
-        autor= 'Alex Michaelides'
-      />
-
-      <CardBooks
-        titulo= 'O mítico homem-mês'
-        autor= 'Fred Brooks'
-      /> 
+        titulo= 'As Cavernas de Aço'
+        autor= 'Isaac Asimov'
+        imagem={capaLivro}
+      />  
     </>
   )
 }
