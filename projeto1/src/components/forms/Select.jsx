@@ -1,6 +1,6 @@
 import styles from './Select.module.css'
 
-function Select({name, text}){
+function Select({name, text, options}){
 
     return(
 
@@ -11,11 +11,14 @@ function Select({name, text}){
             <select name={name} id={name}>
 
                 <option>Selecione uma categoria</option>
-                <option>Ficção Cientifica</option>
-                <option>Fantasia Heroica</option>
-                <option>Suspense</option>
-                <option>Terror</option>
 
+                {
+                    options.map((options)=>{
+                        // console.log(options.nome_categoria)
+                        return <option>{options.nome_categoria}</option>
+                    })
+                }
+                
             </select>
 
         </div>
