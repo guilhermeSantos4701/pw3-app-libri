@@ -1,12 +1,12 @@
-/* Container do Menu */
+/* CONTAINER DO MENU */
 .navbar{
-    display:flex;
+    display: flex;
     justify-content: space-between;
     background-color: #000154;
     padding: 1em;
 }
 
-/* Regra da lista de links */
+/* REGRAS DA LISTA DE LINKS */
 .list{
     display: flex;
     list-style: none;
@@ -14,13 +14,13 @@
     justify-content: space-between;
 }
 
-/* Regras dos links */
+/* REGRAS DOS LINKS */
 .item{
     margin-right: 1em;
-    color: #fff;
+    color: #FFF;
 }
 
-/*Regra de tamanho da imagem logo*/
+/* REGRA DE TAMANHO DA IMAGEM DE LOGO */
 .logo{
     width: 120px;
 }

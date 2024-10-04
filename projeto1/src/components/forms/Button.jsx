@@ -1,8 +1,8 @@
-import style from './Button.module.css'
+import styles from './Button.module.css'
 
 const Button = ({rotulo}) => {
-    return(
-        <div className={style.buttonContainer}>
+    return (
+        <div className={styles.button}>
             <button>{rotulo}</button>
         </div>
     )

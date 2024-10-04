@@ -14,13 +14,13 @@
 
 .home_container h1 span{
     color: #5254f2;
-    padding: 0.2em;;
+    padding: 0 .2em;
     background-color: #222;
 }
 
 .home_container p{
     margin-bottom: 1.5em;
-    color: #7b7b7b;
+    color: #7B7B7B;
 }
 
 .home_container img{
