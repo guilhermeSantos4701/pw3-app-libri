@@ -15,10 +15,16 @@ const CreateBooks = ()=>{
     /* STATE DE DADOS QUE VAI ARMAZENAR O OBJETO JSON DE LIVRO */
     const [book, setBook] = useState({})
 
-    /* HANDLER DE CAPTURA DOS DADOS DE INPUT (NOME DO LIVRO, AUTOR E DESCRIÇÃO) */
+    /* HANDLER DE CAPTURA DOS DADOS DE INPUT OU DIGITAÇÃO (NOME DO LIVRO, AUTOR E DESCRIÇÃO) */
     function handlerChangeBook(event) {
         setBook({...book, [event.target.name] : event.target.value});
         console.log(book)
+    }
+
+    /* CAPTURA OS DADOS DA SELECT */
+    function handleChangeCategory(event) {
+        setBook({...book, cod_categoria: event.target.value});
+        console.log(book);
     }
 
     /* RECUPERA OS DADOS DE CATEGORIAS DA APIREST */
@@ -117,6 +123,7 @@ const CreateBooks = ()=>{
                     name='categoria'
                     text='Escolha uma categoria de livro'
                     options={categorias}
+                    handleChangeCategory={handleChangeCategory}
                 />
 
                 <Button 
